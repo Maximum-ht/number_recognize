@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 16:00:15 2020
+# Process ID: 5500
+# Current directory: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11868 C:\Users\Maxwell\Desktop\SEA-Tutorial\Camera_Demo\Camera_Demo.xpr
+# Log file: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/vivado.log
+# Journal file: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Project/Xilinx_Vivado/Camera_Demo' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 784.523 ; gain = 189.895
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 31 16:01:27 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 31 16:34:57 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+[Fri Jul 31 16:34:57 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Jul 31 16:46:06 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+[Fri Jul 31 16:46:06 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 21:22:22 2020...

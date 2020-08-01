@@ -1,0 +1,231 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 27 14:14:30 2020
+# Process ID: 4252
+# Current directory: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1352 C:\Users\Maxwell\Desktop\SEA-Tutorial\Camera_Demo\Camera_Demo.xpr
+# Log file: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/vivado.log
+# Journal file: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ThinkPad/Desktop/FPGA_Demo_Project/Camera_Demo' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] impl_1 strategy "Vivado Implementation Defaults," step write_bitstream, attribute : Could not find the file 'E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'RAM_Line' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'RAM_Line' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'AXIS_Data_RAM' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'AXIS_Data_RAM' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_1' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_1' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Runs 36-536] Adding Tcl hook script file E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl to utils_1 fileset.
+INFO: [Runs 36-535] Tcl hook script file E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl does not exist.
+INFO: [Project 1-230] Project 'Camera_Demo.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 753.316 ; gain = 137.066
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Vivado 12-4802] The synthesis checkpoint for IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci' is not generated and IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' in run clk_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' in run clk_wiz_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci' in run RAM_Line_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci' in run AXIS_Data_RAM_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'csi_to_axis_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'csi2_d_phy_rx_0'...
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rgb2dvi_0'...
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci
+
+WARNING: [Runs 36-526] Unable to set the pre hook file ' E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl ' for run step Write Bitstream, as path is invalid. 
+WARNING: [Runs 36-526] Unable to set the pre hook file ' E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl ' for run step Write Bitstream, as path is invalid. 
+CRITICAL WARNING: [Project 1-976] Hook script file C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl used in Write Bitstream does not exist.
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE {} [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' in run clk_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' in run clk_wiz_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci' in run RAM_Line_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci' in run AXIS_Data_RAM_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' in run clk_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' in run clk_wiz_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci' in run RAM_Line_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci' in run AXIS_Data_RAM_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Mon Jul 27 14:22:32 2020] Launched csi_to_axis_0_synth_1, csi2_d_phy_rx_0_synth_1, clk_wiz_0_synth_1, rgb2dvi_0_synth_1, clk_wiz_1_synth_1, RAM_Line_synth_1, AXIS_Data_RAM_synth_1, synth_1...
+Run output will be captured here:
+csi_to_axis_0_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/csi_to_axis_0_synth_1/runme.log
+csi2_d_phy_rx_0_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/csi2_d_phy_rx_0_synth_1/runme.log
+clk_wiz_0_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/clk_wiz_0_synth_1/runme.log
+rgb2dvi_0_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/rgb2dvi_0_synth_1/runme.log
+clk_wiz_1_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/clk_wiz_1_synth_1/runme.log
+RAM_Line_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/RAM_Line_synth_1/runme.log
+AXIS_Data_RAM_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+[Mon Jul 27 14:22:34 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+upgrade_ip -srcset clk_wiz_0 -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_wiz_0] -log ip_upgrade.log
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded clk_wiz_0 (Clocking Wizard 6.0) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 955.320 ; gain = 81.945
+export_ip_user_files -of_objects [get_ips clk_wiz_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run clk_wiz_1_synth_1
+reset_run RAM_Line_synth_1
+reset_run AXIS_Data_RAM_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' in run clk_wiz_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci' in run RAM_Line_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci' in run AXIS_Data_RAM_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci
+
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' in run clk_wiz_1_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci' in run RAM_Line_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Project 1-576] IP 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci' in run AXIS_Data_RAM_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Mon Jul 27 14:26:05 2020] Launched clk_wiz_1_synth_1, RAM_Line_synth_1, AXIS_Data_RAM_synth_1, clk_wiz_0_synth_1...
+Run output will be captured here:
+clk_wiz_1_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/clk_wiz_1_synth_1/runme.log
+RAM_Line_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/RAM_Line_synth_1/runme.log
+AXIS_Data_RAM_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+clk_wiz_0_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/clk_wiz_0_synth_1/runme.log
+[Mon Jul 27 14:26:05 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+upgrade_ip -srcset clk_wiz_1 -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_wiz_1] -log ip_upgrade.log
+Upgrading 'clk_wiz_1'
+INFO: [Project 1-386] Moving file 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci' from fileset 'clk_wiz_1' to fileset 'sources_1'.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'CLKOUT2_REQUESTED_OUT_FREQ' from '100.000' to '400.000' has been ignored for IP 'clk_wiz_1'
+INFO: [IP_Flow 19-3422] Upgraded clk_wiz_1 (Clocking Wizard 6.0) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'clk_wiz_1' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips clk_wiz_1] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -srcset AXIS_Data_RAM -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  AXIS_Data_RAM] -log ip_upgrade.log
+Upgrading 'AXIS_Data_RAM'
+INFO: [Project 1-386] Moving file 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/AXIS_Data_RAM/AXIS_Data_RAM.xci' from fileset 'AXIS_Data_RAM' to fileset 'sources_1'.
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [IP_Flow 19-3422] Upgraded AXIS_Data_RAM (Block Memory Generator 8.4) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'AXIS_Data_RAM'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips AXIS_Data_RAM] -no_script -sync -force -quiet
+upgrade_ip -srcset RAM_Line -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  RAM_Line] -log ip_upgrade.log
+Upgrading 'RAM_Line'
+INFO: [Project 1-386] Moving file 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/ip/RAM_Line/RAM_Line.xci' from fileset 'RAM_Line' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded RAM_Line (Block Memory Generator 8.4) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'RAM_Line'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips RAM_Line] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_Line'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'AXIS_Data_RAM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'...
+[Mon Jul 27 14:28:00 2020] Launched clk_wiz_1_synth_1, RAM_Line_synth_1, AXIS_Data_RAM_synth_1...
+Run output will be captured here:
+clk_wiz_1_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/clk_wiz_1_synth_1/runme.log
+RAM_Line_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/RAM_Line_synth_1/runme.log
+AXIS_Data_RAM_synth_1: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/AXIS_Data_RAM_synth_1/runme.log
+[Mon Jul 27 14:28:01 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1216.406 ; gain = 0.000
+launch_runs impl_1 -jobs 2
+[Mon Jul 27 14:32:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Jul 27 14:37:14 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+close [ open C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/new/Video_Generator.v w ]
+add_files C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/new/Video_Generator.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/new/digital_led.v w ]
+add_files C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/new/digital_led.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Jul 27 16:54:25 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+[Mon Jul 27 16:54:25 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Jul 27 16:56:29 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+[Mon Jul 27 16:56:29 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 27 17:01:46 2020...

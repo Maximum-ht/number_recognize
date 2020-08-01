@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jul 27 14:14:30 2020
+# Process ID: 4252
+# Current directory: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1352 C:\Users\Maxwell\Desktop\SEA-Tutorial\Camera_Demo\Camera_Demo.xpr
+# Log file: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/vivado.log
+# Journal file: C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE {} [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+upgrade_ip -srcset clk_wiz_0 -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_wiz_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips clk_wiz_0] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run clk_wiz_1_synth_1
+reset_run RAM_Line_synth_1
+reset_run AXIS_Data_RAM_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+upgrade_ip -srcset clk_wiz_1 -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_wiz_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips clk_wiz_1] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -srcset AXIS_Data_RAM -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  AXIS_Data_RAM] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips AXIS_Data_RAM] -no_script -sync -force -quiet
+upgrade_ip -srcset RAM_Line -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  RAM_Line] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips RAM_Line] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close [ open C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/new/Video_Generator.v w ]
+add_files C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/new/Video_Generator.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/new/digital_led.v w ]
+add_files C:/Users/Maxwell/Desktop/SEA-Tutorial/Camera_Demo/Camera_Demo.srcs/sources_1/new/digital_led.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
